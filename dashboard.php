@@ -52,7 +52,6 @@ $myroom = mysqli_query($conn, "SELECT*FROM myroom");
             <!-- Active Tenants -->
                 <div class="card" id="card1">
                     <div class="card-body">
-
                         <!-- Count Active Tenants -->
                         <?php
                         $tenant = mysqli_query($conn, "SELECT COUNT(*) as total FROM tenant WHERE status ='Active' ");
