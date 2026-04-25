@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Rock+Salt&display=swap');
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#edit {
+    background: none;
+    transition: all 1s;
+}
+
+#edit.move {
+    transform: translateX(20%);
+    transition: all 1s;
+}
+
+#input {
+    display: flex;
+    padding: 10px;
+    background: none;
+    border: 20px solid #105F5F;
+    margin-top: 30px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 20px;
+}
+
+#input h1 {
+    width: 500px;
+    height: 630px;
+    background: black;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+#input h1 img {
+    color: white;
+    font-size: 20px;
+    margin-left: 40px;
+    margin-top: 150px;
+    padding: 30px;
+    width: 350px;
+    height: 50px;
+}
+
+#input form ul {
+    color: white;
+    display: flexbox;
+    justify-content: space-evenly;
+    background: black;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    margin-top: 20px;
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-top: 20px;
+    height: 610px;
+    width: 500px;
+}
+
+#input form ul input {
+    width: 200px;
+    height: 15px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    padding: 4px;
+}
+
+#input form ul button {
+    background: white;
+    margin-left: 220px;
+    border-radius: 20px;
+    border-color: white;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#input form ul button:hover {
+    background: none;
+    border-color: 2px white;
+    box-shadow: 0px 0px 16px #105F5F;
+    color: white;
+}
+
+
+/* Sidebar */
+
+.sidebar {
+    display: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    justify-content: space-between;
+    width: 1560px;
+    height: 60px;
+    Left: 10px;
+    background-color: black;
+    z-index: 2;
+    transform: translateX(-19%);
+}
+
+.sidebar h3 {
+    display: flex;
+    margin-top: 0;
+    padding-right: 15px;
+    padding-top: 6px;
+    color: white;
+    margin-left: 410px;
+    font-family: 'Rock Salt', cursive;
+    font-size: 20px;
+}
+
+.sidebar h3 span.desc {
+    margin-top: 0;
+    padding-left: 50px;
+    padding-top: 14px;
+    padding-right: 10px;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    font-style: italic;
+}
+
+.sidebar h3 span.logout {
+    margin-top: 0;
+    padding-top: 13px;
+    color: white;
+    margin-left: 585px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    z-index: 3;
+}
+
+.sidebar h3 span.logout img {
+    padding-top: 4px;
+    margin-left: 10px;
+}
+
+.sidebar h3 span.logout a {
+    text-decoration: none;
+    color: white;
+}
+
+.sidebar h3 span.logout a:hover {
+    text-decoration: underline;
+}
+
+.sidebar ul {
+    position: absolute;
+    width: 200px;
+    height: 730px;
+    left: 0;
+    top: 0;
+    padding-top: 20px;
+    margin-top: 60px;
+    z-index: -1;
+    justify-content: space-evenly;
+    background-color: black;
+    transition: all 1s;
+}
+
+.sidebar ul.slide {
+    transform: translateX(87%);
+}
+
+.sidebar ul li {
+    text-align: left;
+    display: flex;
+    padding: 8px;
+    padding-right: 0;
+    padding-left: 45px;
+    flex-direction: column;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.sidebar ul li.menu-title {
+    margin-left: 45px;
+    font-weight: 700;
+    font-size: 20px;
+    padding-bottom: 30px;
+}
+
+.sidebar ul li>a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    padding-left: 45px;
+}
+
+.sidebar ul li>a:hover {
+    background: white;
+    padding: 10px;
+    padding-left: 45px;
+    text-decoration: none;
+    color: black;
+}
+
+.sidebar.toggleBtn {
+    cursor: pointer;
+    position: absolute;
+    Left: 10px;
+    top: 20px;
+    z-index: -1;
+}
+
+
+/* Hamburger */
+
+.toggleBtn {
+    margin-left: 320px;
+    top: 8px;
+    bottom: 8px;
+    position: absolute;
+}
+
+.toggleBtn input {
+    position: absolute;
+    width: 60px;
+    height: 28px;
+    left: -20px;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.toggleBtn span {
+    display: flex;
+    flex-direction: column;
+    width: 30px;
+    height: 5px;
+    background: white;
+    margin: 5px 0px;
+    position: relative;
+    transition: all 0.5s;
+    z-index: 2;
+}
+
+
+/* Hamburger animation */
+
+.toggleBtn span:nth-child(2) {
+    transform-origin: 0 0;
+}
+
+.toggleBtn span:nth-child(4) {
+    transform-origin: 0 100%;
+}
+
+.toggleBtn input:checked~span:nth-child(2) {
+    transform: rotate(45deg);
+}
+
+.toggleBtn input:checked~span:nth-child(4) {
+    transform: rotate(-45deg);
+}
+
+.toggleBtn input:checked~span:nth-child(3) {
+    transform: scale(0);
+}
