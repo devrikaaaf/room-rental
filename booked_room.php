@@ -33,8 +33,9 @@ $result = mysqli_query ($conn, "SELECT * FROM booking");
             <li><a href="booked_room.php">Transaction</a></li>
             <li><a href="income.php">Income</a></li>
         </ul>
-    <h3 class="wave">Wave Kost <span class="desc">Comfortable housing for millennials</span>
-    <span class="logout"><a href="homepage.php">Log Out<img src="img/logout1.png" style="width:20px; height:14px;"/></span></a></h3>
+   <h3 class="wave">Wave Kost <span class="desc">Comfortable housing for millennials</span>
+            <span class="logout"><a href="index.php">Log Out</span></a>
+        </h3>
 </div>
 
 <div id="content">

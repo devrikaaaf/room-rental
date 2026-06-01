@@ -38,7 +38,7 @@ date_default_timezone_set('Asia/Jakarta');
             <li><a href="income.php">Income</a></li>
         </ul>
     <h3 class="wave">Wave Kost <span class="desc">Comfortable housing for millennials</span>
-    <span class="logout"><a href="login.php">Log Out</span></a></h3>
+    <span class="logout"><a href="index.php">Log Out</span></a></h3>
 </div>
 
 <div class="wrapper">

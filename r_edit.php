@@ -54,7 +54,7 @@ if(edit($_POST)>0){
             <li><a href="income.php">Income</a></li>
         </ul>
     <h3 class="wave">Wave Kost <span class="desc">Comfortable housing for millennials</span>
-    <span class="logout"><a href="login.php">Log Out</span></a></h3>
+    <span class="logout"><a href="index.php">Log Out</span></a></h3>
 </div>
 
 <div id="edit">

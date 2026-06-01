@@ -41,7 +41,7 @@ $myroom = mysqli_query($conn, "SELECT*FROM myroom");
             <li><a href="income.php">Income</a></li>
         </ul>
         <h3 class="wave">Wave Kost <span class="desc">Comfortable housing for millennials</span>
-            <span class="logout"><a href="login.php">Log Out</span></a>
+            <span class="logout"><a href="index.php">Log Out</span></a>
         </h3>
     </div>
 
