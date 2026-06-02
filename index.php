@@ -13,7 +13,7 @@ require 'functionn/function.php';
           //check password
           $row= mysqli_fetch_assoc($result);
          if(password_verify($password, $row["password"])){
-             header("Location: home.php");
+             header("Location: dashboard.php");
              exit;
          }
       }

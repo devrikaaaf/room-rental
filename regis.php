@@ -7,7 +7,7 @@ if (isset($_POST["register"])) {
     if (registration($_POST) > 0) {
         echo "<script>
         alert('user succesful added!');
-        document.location.href= 'login.php';
+        document.location.href= 'index.php';
         </script>";
     } else {
         echo mysqli_error($conn);
